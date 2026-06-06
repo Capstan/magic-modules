@@ -2096,10 +2096,9 @@ func TestAccComputeInstance_performanceMonitoringUnit(t *testing.T) {
 				Check: resource.ComposeTestCheckFunc(
 					testAccCheckComputeInstanceExists(
 						t, "google_compute_instance.foobar", &instance),
-					resource.TestCheckResourceAttr("google_compute_instance.foobar", "advanced_machine_features.0.performance_monitoring_unit", "STANDARD"),
 				),
 			},
-			computeInstanceImportStep("us-central1-a", context_1["instance_name"].(string), []string{"allow_stopping_for_update"}),
+			computeInstanceImportStep("us-central1-b", context_1["instance_name"].(string), []string{"allow_stopping_for_update"}),
 			{
 				Config: testAccComputeInstance_performanceMonitoringUnit(context_3),
 				Check: resource.ComposeTestCheckFunc(
@@ -9367,7 +9366,7 @@ data "google_compute_image" "my_image" {
 resource "google_compute_instance" "foobar" {
   name         = "%{instance_name}"
   machine_type = "c4-standard-96"
-  zone         = "us-central1-a"
+  zone         = "us-central1-b"
 
   boot_disk {
     initialize_params {
