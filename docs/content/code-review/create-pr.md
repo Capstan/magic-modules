@@ -18,7 +18,7 @@ aliases:
 
 ## Code review
 
-1. (For Google-driven changes) Assign a service team engineer to review your change. Get their approval before proceeding with review by maintainers.
+1. (For Google-driven changes) Please check [go/terraform-ssp-adjustment](https://goto.google.com/terraform-ssp-adjustment) and [go/terraform-contribution-guide](https://goto.google.com/terraform-contribution-guide) before opening a pull request; direct service-team PRs are paused in favor of [go/terraform-fr](https://goto.google.com/terraform-fr).
 1. Creating a new pull request or pushing a new commit automatically triggers our CI pipelines and workflows. After CI starts, downstream diff generation takes about 10 minutes; [VCR tests]({{< ref "/test/test" >}}) can take up to 2 hours. If you are a community contributor, some tests will only run after approval from a reviewer.
    - While convenient, relying on CI to test iterative changes to PRs often adds extreme latency to reviews if there are errors in test configurations or at runtime. We **strongly** recommend you [test your changes locally before pushing]({{< ref "/test/run-tests" >}}) even after the initial change.
    - VCR tests will first attempt to play back recorded HTTP requests (REPLAYING mode). If any tests fail, they will run in RECORDING mode to generate a new cassette; then, the same tests will run again in REPLAYING mode to detect any nondeterministic behavior in the test (which can cause flaky tests.)

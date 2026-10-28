@@ -12,6 +12,9 @@ aliases:
 
 This page explains how you can contribute code and documentation to the	`magic-modules` repository.
 
+> [!IMPORTANT]
+> **Googlers:** Direct pull requests from Google service teams are paused. Before opening a pull request, please review [go/terraform-ssp-adjustment](https://goto.google.com/terraform-ssp-adjustment) and [go/terraform-contribution-guide](https://goto.google.com/terraform-contribution-guide) for instructions on staging changes and submitting requests via [go/terraform-fr](https://goto.google.com/terraform-fr).
+
 ## Before you begin
 
 1. Familiarize yourself with [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow)

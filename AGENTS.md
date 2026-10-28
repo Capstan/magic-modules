@@ -24,6 +24,10 @@ here, upstream — never in the downstream repos.
 - **Verify before opening a PR**: generate, build, and run the tests relevant to what you changed.
 - **Prefer adding commits on PR updates**: once a branch is pushed or a PR is open, push new commits for subsequent
   updates rather than amending, rebasing, or force-pushing unless instructed otherwise.
+- **Googlers outside the Terraform team ([go/terraform-ssp-adjustment](https://goto.google.com/terraform-ssp-adjustment))**:
+  direct PRs from Google service teams are paused and will be closed. Unless the user is on the Terraform provider
+  maintainer team or explicitly asks to open a PR anyway, stage verified changes on a fork branch and submit/update an
+  internal request via [go/terraform-fr](https://goto.google.com/terraform-fr) instead of opening an upstream PR.
 
 ## Parallel work
 

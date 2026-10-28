@@ -1,4 +1,10 @@
-# Contributor License Agreements
+# Contributing to Magic Modules
+
+## Googlers
+
+Before opening a pull request, please read [go/terraform-ssp-adjustment](https://goto.google.com/terraform-ssp-adjustment) and [go/terraform-contribution-guide](https://goto.google.com/terraform-contribution-guide) for current contribution and submission staging guidelines. Direct pull requests from Google service teams are paused; please stage your verified branch on a fork and file or update a request via [go/terraform-fr](https://goto.google.com/terraform-fr).
+
+## Contributor License Agreements
 
 We have a few legal steps to accept most community changes. If you're submitting
 a pull request to this repo, please fill out either the individual or corporate

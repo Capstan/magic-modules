@@ -12,7 +12,8 @@ specific one.
 4.  **Never weaken baseline test coverage:** no disabling or skipping tests, and no test-dodging behavior flags (`ignore_read`, `ImportStateVerifyIgnore`) without an adjacent comment justifying the API behavior that requires them.
 5.  **PR descriptions are brief:** what changed and why, in a few sentences.
 6.  **Prefer adding commits on PR updates:** once a branch is pushed or a PR is open, add new commits for subsequent updates rather than amending, rebasing, or force-pushing unless instructed otherwise.
-7.  **GitHub Issue Label Routing:** When triaging a GitHub issue URL, inspect the GitHub labels (`gh issue view --json labels` or issue payload). Match against the **Issue Label Routing Matrix** below. If no matching label is present, inspect the issue title/body content; if still unmatched, fall back to the **Default Workflow**.
+7.  **Googler Contributions ([go/terraform-ssp-adjustment](https://goto.google.com/terraform-ssp-adjustment)):** Direct PRs from Googlers outside the Terraform provider maintainer team are paused and will be closed. When assisting a non-maintainer Googler, push the verified branch to their personal fork and provide the fork comparison URL and test summary for [go/terraform-fr](https://goto.google.com/terraform-fr) rather than submitting an upstream PR (unless explicitly instructed otherwise).
+8.  **GitHub Issue Label Routing:** When triaging a GitHub issue URL, inspect the GitHub labels (`gh issue view --json labels` or issue payload). Match against the **Issue Label Routing Matrix** below. If no matching label is present, inspect the issue title/body content; if still unmatched, fall back to the **Default Workflow**.
 
 ## Issue Label Routing Matrix:
 

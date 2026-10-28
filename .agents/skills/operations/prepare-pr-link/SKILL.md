@@ -22,6 +22,9 @@ This skill provides step-by-step instructions for preparing, committing, pushing
 
 Before creating a branch or generating the link, verify all of the following rules:
 
+0. **Googler SSP Adjustment ([go/terraform-ssp-adjustment](https://goto.google.com/terraform-ssp-adjustment)):**
+   - Direct pull requests from Googlers outside the Terraform provider maintainer team are paused and will be closed.
+   - If the user is a Googler outside the Terraform maintainer team, still push the verified branch to their personal fork and generate the comparison link so it can be referenced in an internal [go/terraform-fr](https://goto.google.com/terraform-fr) request, but advise them **not** to submit the upstream PR unless they explicitly wish to do so (e.g., to trigger CI VCR recording before closing).
 1. **Single Self-Contained Change:** Each PR must contain only **one** logical change.
    - Adding multiple resources? Put **one resource per PR**.
    - Fixing a bug and adding new fields? Split into **two separate PRs**.
